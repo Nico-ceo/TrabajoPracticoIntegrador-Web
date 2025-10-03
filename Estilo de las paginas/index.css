@@ -1,0 +1,14 @@
+body {
+    background-color: slategrey;
+    font-family: sans-serif;
+    /*fuente general */
+
+}
+
+div {
+    /* prueba de estilo no definido */
+    border: 1px solid rgb(226, 226, 226);
+    background-color: rgb(226, 226, 226);
+    border-radius: 30px;
+    box-shadow: 4px 4px 25px rgb(65, 75, 85);
+}
