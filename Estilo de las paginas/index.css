@@ -1,5 +1,5 @@
 body {
-    background-color: slategrey;
+    background-color: rgb(255, 255, 255);
     font-family: sans-serif;
     /*fuente general */
 
@@ -11,4 +11,26 @@ div {
     background-color: rgb(226, 226, 226);
     border-radius: 30px;
     box-shadow: 4px 4px 25px rgb(65, 75, 85);
+}
+
+
+.isla {
+
+    border: 1px solid black;
+    border-radius: 7px;
+    text-align: center;
+    width: 200px;
+    height: 27px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+
+}
+
+/*falta agregar un position: fixed;*/
+img {
+    margin: 5px;
+    width: 17px;
+
 }
