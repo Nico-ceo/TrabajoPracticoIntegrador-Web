@@ -29,6 +29,7 @@ h1 {
     padding-top: 60px;
     padding-bottom: 60px;
     background-size: contain;
+    background-position: center;
 }
 
 .estaciones {
@@ -41,11 +42,15 @@ h1 {
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     background-image: url(../img/otoño.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #item4{
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     background-image: url(../img/verano.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #item2{
     background-image: url(../img/invierno.png);
