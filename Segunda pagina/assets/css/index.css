@@ -1,3 +1,6 @@
+*{
+    color: white;
+}
 .tabla {
     display: flex;
     justify-content: center;
@@ -79,4 +82,7 @@ img {
 #uno{
     background-image: url(../img/chica\ verano.png);
     background-image: -webkit-image-set(100px);
+}
+body{
+    background-color: rgb(77,77,77);
 }
