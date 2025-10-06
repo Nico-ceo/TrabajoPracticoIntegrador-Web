@@ -1,5 +1,7 @@
 *{
     color: white;
+    background-position: center;
+    background-size: contain;
 }
 .tabla {
     display: flex;
@@ -15,7 +17,7 @@
 
 .item {
     border: 1px solid;
-    padding: 70px 80px;
+    padding: 70px 90px;
     border-radius: 10px;
 }
 
@@ -29,8 +31,8 @@ h1 {
     border: 1px solid black;
     padding-left: 90px;
     padding-right: 90px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     background-size: contain;
     background-position: center;
 }
@@ -80,9 +82,54 @@ img {
 }
 
 #uno{
-    background-image: url(../img/chica\ verano.png);
-    background-image: -webkit-image-set(100px);
+    background-image: url(../img/ot/ot1.png);
 }
+#dos{
+    background-image: url(../img/ot/ot2.png);
+}
+#tres{
+    background-image: url(../img/ot/ot3.png);
+}
+#cuatro{
+    background-image: url(../img/ot/ot4.png);
+}
+#cinco{
+    background-image: url(../img/in/in1.png);
+}
+#seis{
+    background-image: url(../img/in/in2.png);
+}
+#siete{
+    background-image: url(../img/in/in3.png);
+}
+#ocho{
+    background-image: url(../img/in/in4.png);
+}
+#nueve{
+    background-image: url(../img/pr/pr1.png);
+}
+#diez{
+    background-image: url(../img/pr/pr2.png);
+}
+#once{
+    background-image: url(../img/pr/pr3.png);
+}
+#doce{
+    background-image: url(../img/pr/pr4.png);
+}
+#trece{
+    background-image: url(../img/ve/ve1.png);
+}
+#catorce{
+    background-image: url(../img/ve/ve2.png);
+}
+#quince{
+    background-image: url(../img/ve/ve3.png);
+}
+#diezyseis{
+    background-image: url(../img/ve/ve4.png);
+}
+
 body{
     background-color: rgb(77,77,77);
 }
