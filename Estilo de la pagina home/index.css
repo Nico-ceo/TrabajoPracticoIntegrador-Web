@@ -1,17 +1,33 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(210, 210, 210);
     font-family: sans-serif;
     /*fuente general */
 
 }
 
 .Bienvenido {
-    /* prueba de estilo no definido */
-    border: 1px solid rgb(226, 226, 226);
-    background-color: rgb(226, 226, 226);
-    border-radius: 30px;
+    /*Codigo de la portada*/
+    background-image: url(../inconos/imagendeportadasinfondo.png);
+    height: 372px;
+    width: 1251px;
+    border: 1px solid black;
+    border-radius: 52px;
     box-shadow: 4px 4px 25px rgb(65, 75, 85);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+
+
+}
+
+#eslogan {
     text-align: center;
+    color: white;
+    margin-top: 145px;
+    font-size: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 
@@ -25,6 +41,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 25px black;
 
 }
 
