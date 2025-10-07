@@ -1,54 +1,5 @@
 body {
-    background-color: black;
-}
-
-fieldset {
-
-
-    padding: 30px;
-}
-
-form {
-    margin: auto;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 13px;
-    color: white;
-    width: 260px;
-    padding: 90px;
-    text-align: center;
-
-
-
-
-}
-
-textarea {
-    font-size: 12px;
-    color: white;
-    resize: none;
-    height: 50px;
-    background-color: black;
-    border: 1px solid black;
-}
-
-input {
-    border: 1px rgb(0, 0, 0);
-    border-bottom: 1px solid rgb(255, 255, 255);
-    background-color: black;
-    color: white;
-}
-
-fieldset {
-    box-shadow: 2px 2px 20px rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 22px;
-}
-
-button {
-    box-shadow: 2px 2px 20px rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
 }
 
 #islacontacto {
@@ -69,4 +20,66 @@ img {
     width: 17px;
     color: white;
     background-color: white;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+fieldset {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 1px 1px 20px white;
+    border-radius: 22px;
+
+}
+
+label,
+input {
+    padding: 2px;
+    margin: 15px;
+    margin-top: -20px 0;
+
+
+
+}
+
+form {
+    color: white;
+
+}
+
+input {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+    border-radius: 22px;
+    color: white;
+    box-shadow: 1px 1px 20px white;
+}
+
+textarea {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 22px;
+    color: white;
+    text-align: center;
+    resize: none;
+    height: 90px;
+    box-shadow: 1px 1px 20px white;
+}
+
+button {
+    border-radius: 22px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    margin: 30px;
+    width: 120px;
+    box-shadow: 1px 1px 20px white;
+
 }

@@ -1,8 +1,9 @@
-*{
+* {
     color: white;
     background-position: center;
     background-size: contain;
 }
+
 .tabla {
     display: flex;
     justify-content: center;
@@ -27,7 +28,10 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
 }
 
-#item1 , #item2 , #item3, #item4{
+#item1,
+#item2,
+#item3,
+#item4 {
     border: 1px solid black;
     padding-left: 90px;
     padding-right: 90px;
@@ -43,24 +47,28 @@ h1 {
     padding: 5px 200px;
     justify-content: center;
 }
-#item1{
+
+#item1 {
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     background-image: url(../img/otoño.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-#item4{
+
+#item4 {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     background-image: url(../img/verano.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-#item2{
+
+#item2 {
     background-image: url(../img/invierno.png);
 }
-#item3{
+
+#item3 {
     background-image: url(../img/primavera.png);
 }
 
@@ -73,6 +81,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    background-color: white;
 }
 
 img {
@@ -81,55 +90,70 @@ img {
 
 }
 
-#uno{
+#uno {
     background-image: url(../img/ot/ot1.png);
 }
-#dos{
+
+#dos {
     background-image: url(../img/ot/ot2.png);
 }
-#tres{
+
+#tres {
     background-image: url(../img/ot/ot3.png);
 }
-#cuatro{
+
+#cuatro {
     background-image: url(../img/ot/ot4.png);
 }
-#cinco{
+
+#cinco {
     background-image: url(../img/in/in1.png);
 }
-#seis{
+
+#seis {
     background-image: url(../img/in/in2.png);
 }
-#siete{
+
+#siete {
     background-image: url(../img/in/in3.png);
 }
-#ocho{
+
+#ocho {
     background-image: url(../img/in/in4.png);
 }
-#nueve{
+
+#nueve {
     background-image: url(../img/pr/pr1.png);
 }
-#diez{
+
+#diez {
     background-image: url(../img/pr/pr2.png);
 }
-#once{
+
+#once {
     background-image: url(../img/pr/pr3.png);
 }
-#doce{
+
+#doce {
     background-image: url(../img/pr/pr4.png);
 }
-#trece{
+
+#trece {
     background-image: url(../img/ve/ve1.png);
 }
-#catorce{
+
+#catorce {
     background-image: url(../img/ve/ve2.png);
 }
-#quince{
+
+#quince {
     background-image: url(../img/ve/ve3.png);
 }
-#diezyseis{
+
+#diezyseis {
     background-image: url(../img/ve/ve4.png);
 }
 
-body{
-    background-color: rgb(77,77,77);
+body {
+    background-color: rgb(77, 77, 77);
 }

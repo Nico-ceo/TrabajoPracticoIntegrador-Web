@@ -13,3 +13,13 @@ img {
     margin: 5px;
     width: 17px;
 }
+
+h1 {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    height: 40px;
+    margin: 12px auto;
+}
