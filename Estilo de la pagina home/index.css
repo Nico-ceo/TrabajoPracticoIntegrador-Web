@@ -61,16 +61,23 @@ img {
 }
 
 #parrafo-de-quienes-somos {
-    text-align: center;
     color: rgb(255, 255, 255);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-shadow: 1px 1px 40px black;
+    /* text-align: right; */
+    margin-top: -250px;
+    font-size: 20px;
+    /* text-align: right; */
+    display: flex;
+    justify-content: flex-end;
 }
 
 #primercolumna {
-    border: 1px solid black;
+    box-shadow: 1px 1px 22px black;
     background-color: rgb(0, 0, 0);
     justify-content: center;
+    width: 1300px;
+    margin: auto;
 
 
 
