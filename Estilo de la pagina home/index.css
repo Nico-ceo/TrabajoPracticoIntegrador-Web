@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(210, 210, 210);
+    background-color: rgb(255, 253, 253);
     font-family: sans-serif;
     /*fuente general */
 
@@ -33,7 +33,7 @@ body {
 
 .isla {
 
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 7px;
     text-align: center;
     width: 200px;
@@ -57,6 +57,7 @@ img {
     background-image: url(../inconos//🌍.jpeg);
     width: 540px;
     height: 500px;
+    border-radius: 22px;
 
 }
 
@@ -64,10 +65,9 @@ img {
     color: rgb(255, 255, 255);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-shadow: 1px 1px 40px black;
-    /* text-align: right; */
-    margin-top: -250px;
+    text-align: center;
+    margin-top: -70px;
     font-size: 20px;
-    /* text-align: right; */
     display: flex;
     justify-content: flex-end;
 }
@@ -78,21 +78,30 @@ img {
     justify-content: center;
     width: 1300px;
     margin: auto;
-
-
-
-
+    border-radius: 22px;
 }
+
 
 #trayectoria {
     display: flex;
     justify-content: center;
     padding: 5px;
+    background-color: rgb(247, 30, 30);
+    border-radius: 22px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    box-shadow: 1px 1px 25px black;
+    font-size: 18px;
 }
 
-.segundatabla {
-    border: 1px solid black;
-    padding: 150px;
+#imagendetrayectoria {
+    width: 600px;
+    height: 600px;
+    box-shadow: 1px 1px 25px rgb(147, 0, 0);
+    border-radius: 22px;
+
+
 }
 
 #reconocimientos {
@@ -113,6 +122,8 @@ img {
 
 footer {
     background-color: rgb(175, 175, 175);
-    width: 100%;
-    height: 100px;
+    width: 2000px;
+    font-size: 15px;
+    text-align: center;
+
 }
