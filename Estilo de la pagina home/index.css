@@ -1,7 +1,10 @@
 body {
     background-color: rgb(255, 253, 253);
     font-family: sans-serif;
-    /*fuente general */
+    background-image: url(../inconos/drop008.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
 }
 
@@ -12,7 +15,7 @@ body {
     width: 1251px;
     border: 1px solid black;
     border-radius: 52px;
-    box-shadow: 4px 4px 25px rgb(65, 75, 85);
+    box-shadow: 1px 1px 5px rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     margin: auto;
@@ -64,7 +67,6 @@ img {
 #parrafo-de-quienes-somos {
     color: rgb(255, 255, 255);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    box-shadow: 1px 1px 40px black;
     text-align: center;
     margin-top: -70px;
     font-size: 20px;
@@ -73,7 +75,7 @@ img {
 }
 
 #primercolumna {
-    box-shadow: 1px 1px 22px black;
+    box-shadow: 1px 1px 5px rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
     justify-content: center;
     width: 1300px;
@@ -91,8 +93,9 @@ img {
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
-    box-shadow: 1px 1px 25px black;
+
     font-size: 18px;
+    margin: 20px;
 }
 
 #imagendetrayectoria {
