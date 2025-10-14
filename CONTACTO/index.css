@@ -1,5 +1,13 @@
 body {
-    background-color: rgb(0, 0, 0);
+
+    background-image: url(../inconos/descarga\ \(11\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 950px;
+
+
+
 }
 
 #islacontacto {
@@ -31,11 +39,12 @@ p {
 
 fieldset {
     width: 300px;
-    height: 300px;
+    height: 390px;
     margin: auto;
     text-align: center;
-    box-shadow: 1px 1px 20px white;
+    box-shadow: 1px 1px 100px rgb(3, 3, 3);
     border-radius: 22px;
+    background: rgba(0, 0, 0, 0.5);
 
 }
 
@@ -47,10 +56,13 @@ input {
 
 
 
+
 }
 
 form {
     color: white;
+    margin-top: 150px;
+
 
 }
 
@@ -71,6 +83,7 @@ textarea {
     resize: none;
     height: 90px;
     box-shadow: 1px 1px 20px white;
+    background: transparent;
 }
 
 button {

@@ -19,21 +19,27 @@
 </div>
 
 <body>
-    <p>
-        Danos tu opinion y tu direccion de correo para mantenerte infomado de todo lo nuevo que va a salir pronto.
-    </p>
+
+
+    <p id="imagendeformulario"></p>
+
     <form action="">
         <fieldset>
 
             <label for="">Nombre y apellido:</label><br>
-            <input type="text"><br>
+            <input type="text" required minlength="8"><br>
 
 
             <label for="">Email:</label><br>
-            <input type="email" name="" id=""><br>
+            <input type="email" name="" id="" required><br>
+
+            <label for="">Numero de telefono:</label><br>
+            <input type="number" name="" id="" required pattern="\+54\s?[0-9]{2}\s?[0-9]{4}-[0-9]{4}"><br>
 
 
             <textarea name="contenido" id="">Danos tu opinion</textarea><br>
+
+            <input type="checkbox">¿Quienes recibir novedades ?
             <div>
                 <button type="submit" onclick="alert('Gracias por registrate')">Enviar</button>
             </div>
