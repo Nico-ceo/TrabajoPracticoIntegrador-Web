@@ -1,11 +1,9 @@
 body {
     background-color: rgb(255, 253, 253);
     font-family: sans-serif;
-    background-image: url(../inconos/fondo\ blanco.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
 }
 
 .Bienvenido {
@@ -33,25 +31,26 @@ body {
 
 }
 
-/*falta agregar un position: fixed; es opcional */
+
+
 .isla {
+  display: flex;
+  align-items: center;         
+  justify-content: space-around; 
+  border: 1px solid black;
+  padding: 15px; 
+    color:  #D9E0A4;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    background-color: #19485f ;
+}
 
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 7px;
-    text-align: center;
-    width: 200px;
-    height: 27px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 4px 4px 25px black;
-
-
-
+.isla .item{
+    display: flex;
 }
 
 
+/*falta agregar un position: fixed; es opcional */
 img {
     margin: 5px;
     width: 17px;
