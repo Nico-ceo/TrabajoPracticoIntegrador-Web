@@ -38,15 +38,20 @@ body {
   align-items: center;         
   justify-content: space-around; 
   border: 1px solid black;
-  padding: 15px; 
+  padding: 10px; 
     color:  #D9E0A4;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
+    font-size: 25px;
     background-color: #19485f ;
 }
 
 .isla .item{
     display: flex;
+    padding: 0px 100px;
+}
+.isla #pag1{
+    background-color: rgb(46, 46, 46);
+
 }
 
 
