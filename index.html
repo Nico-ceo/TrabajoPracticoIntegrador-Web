@@ -22,8 +22,8 @@
 
         <div class="item" id="pag2">
 
-            <p> <a href="./Segunda pagina/segundohtml.html" target="_parent" class="item"> <img src="./inconos/1-circle.svg"
-                        alt=""> Articulos </a></p>
+            <p> <a href="./Segunda pagina/segundohtml.html" target="_parent" class="item"> <img
+                        src="./inconos/1-circle.svg" alt=""> Articulos </a></p>
         </div>
 
         <div class="item" id="pag3">
@@ -54,37 +54,58 @@
         </table>
 
     </div><br>
-
-    <div id="reconocimientos">
+    <!-- lista ordenada carrusel  -->
+    <div class="carrusel">
         <ul>
-            <li><img src="" alt="">
+            <li>
+                <img src="./inconos/estilo formal sin fondo.png" alt="" class="activo">
                 <div id="textoreconocimiento">
-                    <h1>primer imagen </h1>
-                    <p>contexto de esta imagen .</p>
+
                 </div>
             </li>
-            <li><img src="" alt="">
+            <li>
+                <img src="./inconos/Estilo informal sin fondo.png" alt="">
                 <div id="textoreconocimiento">
-                    <h1>Segunda imagen </h1>
-                    <p>contexto de esta imagen .</p>
+
                 </div>
             </li>
-            <li><img src="" alt="">
+            <li>
+                <img src="./inconos/Estilo urbano sin fondo.png" alt="">
                 <div id="textoreconocimiento">
-                    <h1>Tercer imagen </h1>
-                    <p>contexto de esta imagen .</p>
                 </div>
             </li>
         </ul>
-        <!-- <table id="reconozco">
-            <tr>
-                <td class="reconocimientos">dw</td>
-                <td class="reconocimientos">dw</td>
-                <td class="reconocimientos">dw</td>
-                <td class="reconocimientos">dw</td>
-                <td class="reconocimientos">dw</td>
-            </tr>
-        </table> -->
+
+        <!-- botones del carrusel -->
+        <button class="btn izquierda">&#10094;</button>
+        <button class="btn derecha">&#10095;</button>
+
+
+
+        <!-- scrip para el funcionamiento del carrusel -->
+        <script>
+            const carrusel = document.querySelector('.carrusel ul');
+
+            const btnIzq = document.querySelector('.izquierda');
+            const btnDer = document.querySelector('.derecha');
+            let indice = 0;
+
+            function mostrarSlide(n) {
+                if (n >= 3) indice = 0;
+                if (n < 0) indice = 2;
+                carrusel.style.transform = `translateX(-${indice * 1400}px)`;
+            }
+
+            btnDer.onclick = () => {
+                indice++;
+                mostrarSlide(indice);
+            };
+
+            btnIzq.onclick = () => {
+                indice--;
+                mostrarSlide(indice);
+            };
+        </script>
     </div><br><br>
 
     <div id="trayectoria">
