@@ -1,16 +1,24 @@
 body {
-    background-color: rgb(255, 253, 253);
-    font-family: sans-serif;
+    background-color: #F0E7D6;
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin: auto;
+}
+
+* {
+    margin: auto;
+    box-sizing: border-box;
+    padding: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .Bienvenido {
     /*Codigo de la portada*/
     background-image: url(../inconos/imagendeportadasinfondo.png);
     height: 372px;
-    width: 1251px;
+    width: 1300px;
     border: 1px solid black;
     border-radius: 52px;
     box-shadow: 1px 1px 5px rgb(255, 255, 255);
@@ -20,40 +28,50 @@ body {
 
 
 
+
 }
 
 #eslogan {
     text-align: center;
-    color: white;
+    color: #F0E7D6;
     margin-top: 145px;
     font-size: 70px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
 
 }
 
 
 
 .isla {
-  display: flex;
-  align-items: center;         
-  justify-content: space-around; 
-  border: 1px solid black;
-  padding: 10px; 
-    color:  #D9E0A4;
-    font-family: 'Courier New', Courier, monospace;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 10px;
+
+
     font-size: 25px;
-    background-color: #19485f ;
+
+    background-color: #9DBDB8;
 }
 
-.isla .item{
+a {
+    color: #F0E7D6;
+
+}
+
+
+
+
+.isla .item {
     display: flex;
     padding: 0px 100px;
-}
-.isla #pag1{
-    background-color: rgb(46, 46, 46);
 
 }
-
 
 /*falta agregar un position: fixed; es opcional */
 img {
@@ -71,8 +89,7 @@ img {
 }
 
 #parrafo-de-quienes-somos {
-    color: rgb(255, 255, 255);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #F0E7D6;
     text-align: center;
     margin-top: -70px;
     font-size: 30px;
@@ -96,12 +113,13 @@ img {
     padding: 5px;
     background-color: rgb(247, 30, 30);
     border-radius: 22px;
-    color: white;
+    color: #F0E7D6;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
 
-    font-size: 30px;
-    margin: 20px;
+    font-size: 25px;
+    margin: auto;
+    width: 1290px;
 }
 
 #imagendetrayectoria {
@@ -109,11 +127,13 @@ img {
     height: 600px;
     box-shadow: 1px 1px 25px rgb(147, 0, 0);
     border-radius: 20px;
+    font-size: 20px;
 
 
 }
 
-#reconocimientos {
+
+/* #reconocimientos {
     display: flex;
     justify-content: center;
     padding: 5px;
@@ -127,15 +147,15 @@ img {
 
 #reconozco {
     border: 1px solid black;
-}
+} */
 
 footer {
     position: end;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: black;
-    color: white;
+    background-color: rgb(247, 30, 30);
+    color: #F0E7D6;
     text-align: center;
     padding: 10px 0;
 
