@@ -52,17 +52,16 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 20px 20px;  
     font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
     background-color: #9DBDB8;
 
 }
 
 .isla .itemis {
     display: flex;
-    padding: 0px 100px;
 }
 
 .isla #pag1 {

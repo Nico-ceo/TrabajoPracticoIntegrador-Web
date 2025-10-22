@@ -4,12 +4,11 @@
     background-size: contain;
 }
 body {
-     color: white;
+     color: rgb(255, 142, 142);
 }
 
 #paginados{
     background-color: rgb(105, 105, 105);
-    margin: 0px 150px;
 }
 .item img {
   width: 150px;      
@@ -124,11 +123,11 @@ h1 {
   align-items: center;         
   justify-content: space-around; 
   border: 1px solid black;
-  padding: 18px 40px;  
+  padding: 0px 20px;  
     color:  #D9E0A4;
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
-    background-color: #19485f ;
+   background-color: #9DBDB8;
 }
 
 
