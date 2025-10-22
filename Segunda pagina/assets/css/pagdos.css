@@ -48,8 +48,8 @@ body {
     border-radius: 10px;
      position: relative;
     background-color: black;
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 400px;
+    max-width: 400px;
     min-width: 300px;
     min-height: 130px;
 }

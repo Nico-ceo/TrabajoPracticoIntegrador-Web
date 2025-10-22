@@ -35,13 +35,6 @@ img {
     background-color: white;
 }
 
-p {
-    color: white;
-    text-align: center;
-    font-size: 26px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 fieldset {
     justify-content: space-around;
     display: flex;
@@ -52,7 +45,7 @@ fieldset {
     text-align: center;
     box-shadow: 1px 1px 100px rgb(3, 3, 3);
     border-radius: 15px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgb(179, 178, 178);
     align-items: center;
 }
 
@@ -64,22 +57,24 @@ input {
 }
 
 form {
-    color: white;
+    color: rgb(0, 0, 0)
 }
 
 input {
-    background-color: rgb(0, 0, 0);
-    border: 1px solid white;
-    border-radius: 22px;
-    color: white;
+    background-color: rgb(223, 223, 223);
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 2px;
+    color: rgb(0, 0, 0);
     box-shadow: 1px 1px 20px white;
+    min-width: 220px;
+    max-width: 220px;
 }
 
 textarea {
     background-color: black;
     border: 1px solid white;
     border-radius: 5px;
-    color: white;
+    color: rgb(247, 247, 247);
     text-align: center;
     resize: none;
     box-shadow: 1px 1px 20px white;
@@ -96,4 +91,15 @@ button {
     height: 20px;
     box-shadow: 1px 1px 20px white;
 
+}
+#checkboxc{
+ min-width: 10px;
+ max-width: 10px;
+
+}
+p#checkbox{
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
 }
