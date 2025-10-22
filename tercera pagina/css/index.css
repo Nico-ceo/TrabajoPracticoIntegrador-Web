@@ -5,23 +5,29 @@ body {
     background-size: cover;
     background-position: center;
     height: 950px;
-
-
-
 }
 
-#islacontacto {
-    background-color: white;
-    border: 1px solid rgb(255, 255, 255);
-    color: white;
-    border-radius: 7px;
-    text-align: center;
-    width: 200px;
-    height: 27px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+.isla {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 25px;
+    background-color: #9DBDB8;
 }
+
+.isla .itemis {
+    display: flex;
+    padding: 0px 100px;
+}
+
+.isla #pag1 {
+    background-color: transparent;
+}
+
 
 img {
     margin: 5px;
@@ -53,9 +59,6 @@ input {
     padding: 2px;
     margin: 15px;
     margin-top: -20px 0;
-
-
-
 
 }
 
