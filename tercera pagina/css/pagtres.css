@@ -43,7 +43,7 @@ fieldset {
     height: 600px;
     margin: auto;
     text-align: center;
-    box-shadow: 1px 1px 100px rgb(3, 3, 3);
+    box-shadow: 1px 1px 5px 10px rgb(3, 3, 3);
     border-radius: 15px;
     background: rgb(179, 178, 178);
     align-items: center;
@@ -59,25 +59,25 @@ input {
     border: 1px solid rgb(202, 202, 202);
     border-radius: 2px;
     color: rgb(0, 0, 0);
-    box-shadow: 1px 1px 20px white;
+    box-shadow: 1px 1px 2px 2px rgb(100, 100, 100);
     min-width: 220px;
     max-width: 220px;
     padding: 15px;
-    margin: 0px;
+    margin: -5px;
+    font-size: 15px;
 }
 label{
-    margin: 0px;
+    margin: -5px;
 }
 
  #cuadrotexto{
-    background-color: black;
-    border: 1px solid white;
+    background-color: rgb(233, 233, 233);
+    border: 1px solid rgb(0, 195, 255);
     border-radius: 5px;
-    color: rgb(247, 247, 247);
+    color: rgb(0, 0, 0);
     text-align: center;
     resize: none;
     box-shadow: 1px 1px 20px white;
-    background: transparent;
     
 }
 
@@ -92,13 +92,13 @@ button {
 
 }
 #checkboxc{
- min-width: 10px;
- max-width: 10px;
-
+ min-width: 20px;
+ max-width: 20px;
+ margin: 5px;
 }
 p#checkbox{
     display: flex;
-    font-size: 17px;
+    font-size: 20px;
     align-items: center;
     justify-content: center;
     margin-top: 0px;
