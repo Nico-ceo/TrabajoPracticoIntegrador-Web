@@ -47,30 +47,29 @@ fieldset {
     border-radius: 15px;
     background: rgb(179, 178, 178);
     align-items: center;
+    font-size: 20px;
+    
 }
-
-label,
-input {
-    padding: 10px;
-    margin: 2px;
-
-}
-
 form {
     color: rgb(0, 0, 0)
 }
 
 input {
-    background-color: rgb(223, 223, 223);
-    border: 1px solid rgb(228, 228, 228);
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(202, 202, 202);
     border-radius: 2px;
     color: rgb(0, 0, 0);
     box-shadow: 1px 1px 20px white;
     min-width: 220px;
     max-width: 220px;
+    padding: 15px;
+    margin: 0px;
+}
+label{
+    margin: 0px;
 }
 
-textarea {
+ #cuadrotexto{
     background-color: black;
     border: 1px solid white;
     border-radius: 5px;
@@ -79,6 +78,7 @@ textarea {
     resize: none;
     box-shadow: 1px 1px 20px white;
     background: transparent;
+    
 }
 
 button {
@@ -86,9 +86,8 @@ button {
     background-color: black;
     border: 1px solid white;
     color: white;
-    margin-top: 30px;
     width: 200px;
-    height: 20px;
+    height: 30px;
     box-shadow: 1px 1px 20px white;
 
 }
@@ -99,7 +98,8 @@ button {
 }
 p#checkbox{
     display: flex;
-    font-size: 15px;
+    font-size: 17px;
     align-items: center;
     justify-content: center;
+    margin-top: 0px;
 }
