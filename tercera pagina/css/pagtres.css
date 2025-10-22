@@ -4,7 +4,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 950px;
 }
 
 .isla {
@@ -44,29 +43,28 @@ p {
 }
 
 fieldset {
-    width: 300px;
-    height: 390px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
     margin: auto;
     text-align: center;
     box-shadow: 1px 1px 100px rgb(3, 3, 3);
-    border-radius: 22px;
+    border-radius: 15px;
     background: rgba(0, 0, 0, 0.5);
-
+    align-items: center;
 }
 
 label,
 input {
-    padding: 2px;
-    margin: 15px;
-    margin-top: -20px 0;
+    padding: 10px;
+    margin: 2px;
 
 }
 
 form {
     color: white;
-    margin-top: 150px;
-
-
 }
 
 input {
@@ -80,11 +78,10 @@ input {
 textarea {
     background-color: black;
     border: 1px solid white;
-    border-radius: 22px;
+    border-radius: 5px;
     color: white;
     text-align: center;
     resize: none;
-    height: 90px;
     box-shadow: 1px 1px 20px white;
     background: transparent;
 }
@@ -94,8 +91,9 @@ button {
     background-color: black;
     border: 1px solid white;
     color: white;
-    margin: 30px;
-    width: 120px;
+    margin-top: 30px;
+    width: 200px;
+    height: 20px;
     box-shadow: 1px 1px 20px white;
 
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactar</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/pagtres.css">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
        <div class="isla">
 
         <div class="itemis" id="pag2">
-        <a href="./segundohtml.html" target="_parent" > <!---Primer pestaña-  --> 
+        <a href="../Segunda pagina/segundohtml.html" target="_parent" > <!---Primer pestaña-  --> 
         <p>  <img src="../inconos/1-circle.svg" alt=""> articulos</p>  </a>
         </div>
 
@@ -30,7 +30,7 @@
 
     <p id="imagendeformulario"></p>
 
-    <form action="">
+    <form action="" novalidate>
         <fieldset>
 
             <label for="">Nombre y apellido:</label><br>
@@ -40,16 +40,19 @@
             <label for="">Email:</label><br>
             <input type="email" name="" id="" required><br>
 
-            <label for="">Numero de telefono:</label><br>
-            <input type="number" name="" id="" required pattern="\+54\s?[0-9]{2}\s?[0-9]{4}-[0-9]{4}"><br>
+            <label for="telefono">Numero de telefono:</label><br>
+            <input type="number" name="telefono" id="tel"><br>
 
 
-            <textarea name="contenido" id="">Danos tu opinion</textarea><br>
+            <textarea name="contenido" id="cuadrotexto" rows="10" cols="40">Danos tu opinion</textarea><br>
 
             <input type="checkbox">¿Quienes recibir novedades ?
             <div>
                 <button type="submit" onclick="alert('Gracias por registrate')">Enviar</button>
             </div>
+
+            <p id="comentario"> ... </p>
+
         </fieldset>
     </form>
 
