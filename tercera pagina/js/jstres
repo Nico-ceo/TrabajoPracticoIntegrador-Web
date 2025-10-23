@@ -1,0 +1,36 @@
+const form = document.getElementById("form");
+const email = document.getElementById("email");
+const nameInput = document.getElementById("name");
+const tel = document.getElementById("tel");
+const cuad = document.getElementById("cuadrotexto");
+const submit = document.getElementById("submit");
+const comentarios = document.getElementById("comentarios");
+
+submit.addEventListener('click', function (event) {
+    event.preventDefault(); // evita que se recargue la página
+
+    const expresionRegGm = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const expresionRegTel = /^[+\d][\d\s-]{7,15}$/;
+    const expresionRegNm = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
+
+
+    let errores = "";
+    let num = false;
+    let nombre = false;
+    let correo = false;
+    let cuadrado = false;
+
+    if (expresionRegTel.test(tel.value)) {num = true;} else {
+    errores += "Teléfono no válido<br>";}
+
+    if (nameInput.value.length >= 8 && expresionRegNm.test(nameInput.value)) {nombre = true;
+    } else { errores += "Nombre no válido<br>";}
+
+    if (email.value.length >= 10 && expresionRegGm.test(email.value)) {correo = true;
+    } else {errores += "Email no válido<br>";}
+
+    if (cuad.value.length >= 10) { cuadrado = true;} else {errores += "Comentario demasiado corto<br>";}
+
+    if (num && nombre && correo && cuadrado) {comentarios.innerHTML = "Formulario enviado correctamente ✅";} else {
+        comentarios.innerHTML = errores;}
+});

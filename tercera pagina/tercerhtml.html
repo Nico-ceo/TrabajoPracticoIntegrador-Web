@@ -29,32 +29,33 @@
         </div>
 
     <p id="imagendeformulario"></p>
+    <form id="form" novalidate>
+     <fieldset>
+          <label for="name">Nombre y apellido:</label><br>
+          <input type="text" required minlength="8" id="name" name="name"><br>
 
-    <form action="" novalidate>
-        <fieldset>
+          <label for="email">Email:</label><br>
+          <input type="email" name="email" id="email"><br>
 
-            <label for="">Nombre y apellido:</label><br>
-            <input type="text" required minlength="8"><br>
+          <label for="tel">Número de teléfono:</label><br>
+          <input type="tel" name="telefono" id="tel"><br>
 
+    <textarea name="contenido" id="cuadrotexto" rows="10" cols="30" placeholder="Danos tu opinión"></textarea><br>
 
-            <label for="email">Email:</label><br>
-            <input type="email" name="email" id="email" required><br>
+        <p id="checkbox">
+        ¿Quieres recibir novedades?
+         <input type="checkbox" id="checkboxc" name="checkbox">
+         <label for="checkboxc">Sí</label>
+        </p>
 
-            <label for="telefono">Numero de telefono:</label><br>
-            <input type="number" name="telefono" id="tel"><br>
+        <button type="submit" id="submit">Enviar</button>
 
-            <textarea name="contenido" id="cuadrotexto" rows="10" cols="30">Danos tu opinion</textarea><br>
-    
-            <p id="checkbox">¿Quienes recibir novedades ? <input type="checkbox"  id="checkboxc" name="checkbox"> </p>
-            
-            <button type="submit" onclick="alert('Gracias por registrate')">Enviar</button>
-
-            <p id="comentario"> ... </p>
-
-        </fieldset>
+         <p id="comentarios">...</p>
+    </fieldset>
     </form>
 
-<script src="js/jstres" defer></script>
+
+<script src="./js/jstres" defer></script>
 
 </body>
 
