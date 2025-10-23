@@ -6,7 +6,8 @@ const cuad = document.getElementById("cuadrotexto");
 const submit = document.getElementById("submit");
 const comentarios = document.getElementById("comentarios");
 
-submit.addEventListener('click', function (event) {
+function recargadora() {
+  submit.addEventListener('click', function (event) {
     event.preventDefault(); // evita que se recargue la página
 
     const expresionRegGm = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -20,17 +21,44 @@ submit.addEventListener('click', function (event) {
     let correo = false;
     let cuadrado = false;
 
-    if (expresionRegTel.test(tel.value)) {num = true;} else {
-    errores += "Teléfono no válido<br>";}
+if (nameInput.value.length >= 8 && expresionRegNm.test(nameInput.value)) {
+    nombre = true;
+    nameInput.style.borderColor = "green";
+} else {
+    nameInput.style.borderColor = "red";
+    errores += "Nombre no válido<br>";
+}
 
-    if (nameInput.value.length >= 8 && expresionRegNm.test(nameInput.value)) {nombre = true;
-    } else { errores += "Nombre no válido<br>";}
+if (email.value.length >= 10 && expresionRegGm.test(email.value)) {
+    correo = true;
+    email.style.borderColor = "green";
+} else {
+    email.style.borderColor = "red";
+    errores += "Email no válido<br>";
+}
 
-    if (email.value.length >= 10 && expresionRegGm.test(email.value)) {correo = true;
-    } else {errores += "Email no válido<br>";}
+if (expresionRegTel.test(tel.value)) {
+    num = true;
+    tel.style.borderColor = "green";
+} else {
+    tel.style.borderColor = "red";
+    errores += "Teléfono no válido<br>";
+}
 
-    if (cuad.value.length >= 10) { cuadrado = true;} else {errores += "Comentario demasiado corto<br>";}
+if (cuad.value.length >= 10) {
+    cuadrado = true;
+    cuad.style.borderColor = "green";
+} else {
+    cuad.style.borderColor = "red";
+    errores += "Comentario demasiado corto<br>";
+}
 
-    if (num && nombre && correo && cuadrado) {comentarios.innerHTML = "Formulario enviado correctamente ✅";} else {
-        comentarios.innerHTML = errores;}
-});
+if (num && nombre && correo && cuadrado) {
+    comentarios.innerHTML = "Formulario enviado correctamente ✅";
+} else {
+    comentarios.innerHTML = errores;
+}
+
+});  
+}
+
