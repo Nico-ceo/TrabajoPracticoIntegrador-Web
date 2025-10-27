@@ -16,35 +16,19 @@ body {
 
 .Bienvenido {
     /*Codigo de la portada*/
-    background-image: url(../inconos/imagendeportadasinfondo.png);
-    height: 372px;
-    width: 1300px;
-    border: 1px solid black;
-    border-radius: 52px;
-    box-shadow: 1px 1px 5px rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    margin: auto;
-
-
-
+    background-image: url(../inconos/VOIDWEAR.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    display: block;
 
 }
-
-#eslogan {
-    text-align: center;
-    color: #F0E7D6;
-    margin-top: 145px;
-    font-size: 70px;
-
-
-
-}
-
 
 a {
     color: #F0E7D6;
-
 }
 
 .isla {
@@ -57,7 +41,6 @@ a {
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
     background-color: #9DBDB8;
-
 }
 
 .isla .itemis {
@@ -73,46 +56,43 @@ img {
 
 }
 
-#imagendequienesomos {
-    background-image: url(../inconos//🌍.jpeg);
-    width: 540px;
-    height: 500px;
-    border-radius: 22px;
+#imagendequienessomos {
+    background-image: url(../inconos/PRIMERIMAGENHOME.png);
+
+    width: 1300px;
+    height: 570px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 50px;
 
 }
 
 #parrafo-de-quienes-somos {
     color: #F0E7D6;
     text-align: center;
+
     margin-top: -70px;
     font-size: 30px;
     display: flex;
 
 }
 
-#primercolumna {
-    box-shadow: 1px 1px 5px rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    justify-content: center;
-    width: 1300px;
-    margin: auto;
-    border-radius: 22px;
-}
-
-
 #trayectoria {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    background-color: rgb(247, 30, 30);
-    border-radius: 22px;
-    color: #F0E7D6;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
+    background-image: url(../inconos/portadasegunda.png);
 
-    font-size: 25px;
-    margin: auto;
-    width: 1290px;
+    width: 1100px;
+    height: 600px;
+    font-size: 80px;
+
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 50px;
 }
 
 #imagendetrayectoria {
@@ -130,7 +110,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(247, 30, 30);
+    background-color: #9DBDB8;
     color: #F0E7D6;
     text-align: center;
     padding: 10px 0;
@@ -231,10 +211,11 @@ footer {
 
 #informacion {
     text-align: center;
-    border-radius: 100px;
+
     border: 1px solid #efe3cb;
     background-color: #dfd3be;
 }
+
 
 #ventanitadeayuda {
     margin-left: -20px;
