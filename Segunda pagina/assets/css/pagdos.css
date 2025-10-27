@@ -2,36 +2,42 @@
     color: white;
     background-position: center;
     background-size: contain;
-}
-body {
-     color: rgb(255, 142, 142);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
-#paginados{
-    background-color: rgb(105, 105, 105);
+body {
+    color: rgb(255, 142, 142);
+
 }
+
+#paginados {
+    background-color: #F0E7D6;
+}
+
 .item img {
-  width: 150px;      
-  height: auto;
-  object-fit: cover;  
-  border-radius: 8px; 
-   box-sizing: border-box;
-  
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-sizing: border-box;
+
 }
+
 .item p {
-  color: white;
-  margin-top: 10px;
-  text-align: center;
-  white-space: normal;         
-  word-wrap: break-word;    
-  overflow-wrap: break-word;   
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 
 .tabla {
     display: flex;
     justify-content: space-around;
-    margin: 0px 150px;
+    margin: 8px 150px;
 }
 
 
@@ -46,17 +52,19 @@ body {
     border: 1px solid;
     box-shadow: 0px 0px 07px 3px white;
     border-radius: 10px;
-     position: relative;
+    position: relative;
     background-color: black;
     max-height: 400px;
     max-width: 400px;
     min-width: 300px;
     min-height: 130px;
 }
-.precio{
+
+.precio {
     display: flex;
     position: absolute;
-    left: 0%; bottom:-10%;
+    left: 0%;
+    bottom: -10%;
     background-color: red;
     padding: 5px;
     border-radius: 15px;
@@ -83,7 +91,7 @@ h1 {
     padding-bottom: 70px;
     background-size: contain;
     background-position: center;
-    display: flex; 
+    display: flex;
     flex-direction: row;
 }
 
@@ -119,16 +127,30 @@ h1 {
 }
 
 .isla {
-  display: flex;
-  align-items: center;         
-  justify-content: space-around; 
-  border: 1px solid black;
-  padding: 0px 20px;  
-    color:  #D9E0A4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 0px 20px;
+
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
-   background-color: #9DBDB8;
+    background-color: #172b7d;
+    color: #F0E7D6;
 }
 
+footer {
+    position: end;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #172b7d;
+    color: #F0E7D6;
+    text-align: center;
+    padding: 10px 0;
 
+}
 
+#perfilesgithub {
+    text-decoration: none;
+}

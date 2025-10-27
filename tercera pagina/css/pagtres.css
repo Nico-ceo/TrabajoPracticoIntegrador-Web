@@ -28,8 +28,9 @@ body {
     box-sizing: border-box;
     padding: 19px 19px;
     font-size: 25px;
-    /* font-family: 'Courier New', Courier, monospace; */
-    background-color: #9DBDB8;
+
+    background-color: #172b7d;
+    color: #F0E7D6;
 }
 
 fieldset {
@@ -40,7 +41,6 @@ fieldset {
     height: 600px;
     margin: auto;
     text-align: center;
-    /* box-shadow: 1px 1px 5px 9px rgb(3, 3, 3); */
     border-radius: 15px;
 
     align-items: center;
@@ -79,7 +79,7 @@ label {
     color: rgb(0, 0, 0);
     text-align: center;
     resize: none;
-    box-shadow: 1px 1px 20px rgb(113, 111, 111);
+
 
 }
 
@@ -90,7 +90,7 @@ button {
     color: white;
     width: 200px;
     height: 30px;
-    /* box-shadow: 1px 1px 20px rgb(14, 14, 14); */
+
 
 }
 
@@ -101,11 +101,28 @@ button {
 
 }
 
-p#checkbox {
+#checkbox {
     display: flex;
     font-size: 20px;
     align-items: center;
     justify-content: center;
     margin-top: 0px;
 
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #172b7d;
+    color: #F0E7D6;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+}
+
+a {
+    color: #F0E7D6;
+    text-decoration: none;
 }
