@@ -39,7 +39,14 @@ body {
     justify-content: space-around;
     margin: 8px 150px;
 }
-
+.tabla p{
+    background-color: black;
+}
+.tabla p:first-child{
+    color: #fd9903;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 .columna {
     display: flex;
@@ -100,6 +107,10 @@ h1 {
     flex-direction: row;
     padding: 5px 200px;
     justify-content: center;
+    .estacion {
+    cursor: pointer; /* Cambia el cursor a mano */
+    position: relative; /* Para pseudo-elementos */
+}
 }
 
 #item1 {
@@ -124,6 +135,39 @@ h1 {
 
 #item3 {
     background-image: url(../img/primavera.png);
+}
+/* Hacer las estaciones clickeables y visibles */
+.estacion {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+/* Efecto hover para feedback visual */
+.estacion:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255,255,255,0.7);
+}
+
+/* Capa oscura para mejorar legibilidad del texto sobre las imágenes */
+.estacion::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    border-radius: inherit;
+    z-index: -1;
 }
 
 .isla {
