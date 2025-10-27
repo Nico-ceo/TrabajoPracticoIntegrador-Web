@@ -36,6 +36,7 @@ body {
 fieldset {
     justify-content: space-around;
     display: flex;
+    
     flex-direction: column;
     width: 400px;
     height: 600px;
@@ -45,14 +46,11 @@ fieldset {
 
     align-items: center;
     font-size: 20px;
-    background-color: transparent;
+    background-color: #2b2b3c;
 
 }
 
-form {
-    color: rgb(0, 0, 0);
 
-}
 
 input {
     background-color: rgb(255, 255, 255);
@@ -65,22 +63,29 @@ input {
     padding: 15px;
     margin: -5px;
     font-size: 15px;
-    background-color: transparent;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 label {
     margin: -5px;
+    background-color: #2b2b3d;
+    color: #e0e0e0;
 }
 
 #cuadrotexto {
     background-color: transparent;
-    border: 1px solid rgb(0, 0, 0);
+    border: 2px solid rgb(129, 129, 129);
     border-radius: 15px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     resize: none;
-
-
+    color: #ffffff;
+    font-size: 15px;
+    background-color: #190031;
+}
+fieldset p {
+    color: #ffffff;
 }
 
 button {
