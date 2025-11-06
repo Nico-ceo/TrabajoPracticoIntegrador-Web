@@ -5,21 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
-    <link rel="stylesheet" href="./Estilo de la pagina home/index.css">
+    <link rel="stylesheet" href="./Estilo_scrip_pagina1/index.css">
+
 </head>
 
 <body>
 
     <div class="isla">
-
+        <div id="ventanitadeayuda">
+            <p><a href="#informacion"> <img src="./inconos/info-circle.svg" alt=""></a> <!-- ayuda -->
+        </div>
 
         <div class="item" id="pag2">
 
+
             <p> <a href="./Segunda pagina/segundohtml.html" target="_parent" class="item"> <img
-                        src="./inconos/bucket.svg" alt=""> </a></p> <!--Articulos -->
+                        src="./inconos/bucket.svg" alt=""> </a></p> <!--Articulos tienda -->
         </div>
         <div>
-            <a href="./index.html"> <p>VOIDWEAR</p> </a>
+            <a>
+                <p>VOIDWEAR</p>
+            </a>
         </div>
 
         <div class="item" id="pag1">
@@ -29,11 +35,10 @@
                 </a>
             </p> <!--Contactar -->
         </div>
+
     </div>
 
-    <div id="ventanitadeayuda">
-            <p><a href="#informacion"> <img src="./inconos/info-circle.svg" alt=""></a></p>
-        </div>
+
 
     <div class="Bienvenido">
     </div>
@@ -43,7 +48,9 @@
 
     <!-- lista ordenada carrusel  -->
     <div class="carrusel">
+
         <ul>
+
             <li>
                 <img src="./inconos/estilo formal sin fondo.png" alt="" class="activo">
                 <div id="textoreconocimiento">
@@ -69,30 +76,8 @@
 
 
 
-        <!-- scrip para el funcionamiento del carrusel -->
-        <script>
-            const carrusel = document.querySelector('.carrusel ul');
 
-            const btnIzq = document.querySelector('.izquierda');
-            const btnDer = document.querySelector('.derecha');
-            let indice = 0;
 
-            function mostrarSlide(n) {
-                if (n >= 3) indice = 0;
-                if (n < 0) indice = 2;
-                carrusel.style.transform = `translateX(-${indice * 1400}px)`;
-            }
-
-            btnDer.onclick = () => {
-                indice++;
-                mostrarSlide(indice);
-            };
-
-            btnIzq.onclick = () => {
-                indice--;
-                mostrarSlide(indice);
-            };
-        </script>
     </div><br><br>
 
     <div id="trayectoria">
@@ -129,7 +114,7 @@
 
 
 
-    <script src="./interacion/JavaScript.jss"></script>
+    <script src="./Estilo_scrip_pagina1/carrusel.js"></script>
 
 </body>
 
