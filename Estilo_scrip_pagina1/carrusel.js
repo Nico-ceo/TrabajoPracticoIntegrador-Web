@@ -1,21 +1,27 @@
-const carrusel = document.querySelector('.carrusel ul');
+let imagenes = document.querySelectorAll(".imagen");
+let indiceActual = 0;
 
-const btnIzq = document.querySelector('.izquierda');
-const btnDer = document.querySelector('.derecha');
-let indice = 0;
+mostrarImagen(indiceActual);
 
-function mostrarSlide(n) {
-    if (n >= 3) indice = 0;
-    if (n < 0) indice = 2;
-    carrusel.style.transform = `translateX(-${indice * 1400}px)`;
+function mostrarImagen(indice) {
+    for (let i = 0; i < imagenes.length; i++) {
+        imagenes[i].style.display = "none";
+    }
+    imagenes[indice].style.display = "block";
 }
 
-btnDer.onclick = () => {
-    indice++;
-    mostrarSlide(indice);
-};
+function derecha() {
+    indiceActual++;
+    if (indiceActual >= imagenes.length) {
+        indiceActual = 0;
+    }
+    mostrarImagen(indiceActual);
+}
 
-btnIzq.onclick = () => {
-    indice--;
-    mostrarSlide(indice);
-};
+function izquierda() {
+    indiceActual--;
+    if (indiceActual < 0) {
+        indiceActual = imagenes.length - 1;
+    }
+    mostrarImagen(indiceActual);
+}
