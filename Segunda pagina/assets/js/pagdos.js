@@ -52,51 +52,55 @@ const productos = [
   ]
 ];
 
-
+console.log("Javascript Cargado")
 
 // Escucha los clics en los elementos de las estaciones
+
+function MostrarRopa(indice) {
+  const tabla = document.getElementById("tabla"); 
+  let articulo = "";    // se comienza vacio para evitar errores, un solo articulo
+  let tresArt  = "";    // para poner tres articulos
+  tabla.innerHTML = ""; // limpiar cada vez que se muestre uno diferente
+
+  // recorro los productos de la estación seleccionada
+  for (let fila = 0; fila < productos[indice].length; fila++) {
+
+    // guardar en varias variables al mismo tiempo, se pone como si fuera un arreglo entre corchetes[]
+    let [titulo, descripcion, url] = productos[indice][fila].split("##");
+
+    // un articulo individual
+    articulo += "<div class='producto'>";
+    articulo += "<p>" + titulo + "</p>";
+    articulo += "<p>" + descripcion + "</p>";
+    articulo += "<img src='" + url + "' alt='" + titulo + "'>";
+    articulo += "</div>";
+
+    // cada 3 artículos agrego una fila nueva
+    if ((fila + 1) % 3 == 0) {
+      tresArt += "<div class='fila'>" + articulo + "</div>";
+      articulo = ""; // reinicio para los próximos 3
+    }
+  }
+
+  // agrego todo al HTML
+  tabla.innerHTML = tresArt;
+}
+
+// ---- eventos ----
 const estaciones = document.getElementsByClassName("estacion");
-Array.from(estaciones).forEach(element => {
-  element.addEventListener('click', function () {
-    mostrarEstacion(element);
+
+Array.from(estaciones).forEach(function (element) {
+  element.addEventListener("click", function () {
+    switch (element.id) {
+      case "item1": MostrarRopa(0); break;
+      case "item2": MostrarRopa(1); break;
+      case "item3": MostrarRopa(2); break;
+      case "item4": MostrarRopa(3); break;
+      default: break;
+    }
   });
 });
 
-function mostrarEstacion(estacion) {
-  const tabla = document.getElementById("tabla");
-  tabla.innerHTML = "";
 
 
-  //infices para que se divida y luego se vea que son cada uno
-  let indice = {
-    "item1": 0,
-    "item2": 1,
-    "item3": 2,
-    "item4": 3
-  }[estacion.id];
 
-  if (indice === undefined) return;
-
-  let productosEstacion = productos[indice];
-
-
-  for (let i = 0; i < productosEstacion.length; i += 3) {
-    const fila = document.createElement("div");
-    fila.classList.add("fila");
-
-    for (let j = i; j < i + 3 && j < productosEstacion.length; j++) {
-      const [titulo, descripcion, img] = productosEstacion[j].split("##");
-      const item = document.createElement("div");
-      item.classList.add("producto");
-
-      item.innerHTML = `
-        <img src="${img}" alt="${titulo}">
-        <h3>${titulo}</h3>
-        <p>${descripcion}</p>
-      `;
-
-      fila.appendChild(item);
-    }
-    tabla.appendChild(fila);
-  }
-}
