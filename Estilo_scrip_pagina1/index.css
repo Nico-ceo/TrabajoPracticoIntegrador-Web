@@ -11,6 +11,7 @@ body {
     margin: auto;
     box-sizing: border-box;
     padding: auto;
+
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -128,39 +129,70 @@ footer {
     height: 550px;
     margin: 50px auto;
     overflow: hidden;
-    border-radius: 109px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.carrusel img.imagen {
-    width: 1400px;
-    height: 550px;
-    object-fit: cover;
-    display: none;
-    border-radius: 10px;
+/* Contenedor interno */
+.carrusel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* ← centra horizontal */
+    align-items: center;
+    /* ← centra vertical */
 }
 
+/* Imagen principal */
+.imgCar {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50px;
+    display: block;
+}
+
+/* BOTONES */
 .boton-izquierda,
-.boton-derecho {
+.boton-derecha {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background: none;
     border: none;
     cursor: pointer;
+    z-index: 100;
+    padding: 0;
 }
 
+/* Flecha izquierda  */
 .boton-izquierda {
-    left: 10px;
+    margin-left: -1500px;
+
+    /* left: 0; */
+
 }
 
-.boton-derecho {
-    right: 10px;
+/* Flecha derecha*/
+.boton-derecha {
+    margin-right: -1500px;
+
 }
 
+/* Íconos */
 button img {
-    width: 50px;
+    width: 60px;
 }
 
+#slide-number {
+    margin: 0;
+    text-align: center;
+}
 
 
 #informacion {

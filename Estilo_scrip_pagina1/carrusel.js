@@ -1,27 +1,30 @@
-let imagenes = document.querySelectorAll(".imagen");
-let indiceActual = 0;
+const carouselData = [
+    { src: "./inconos/estilo-formal-sin-fondo.png" },
+    { src: "./inconos/estilo-informal-sin-fondo.png" },
+    { src: "./inconos/estilo-urbano-sin-fondo.png" }
+];
 
-mostrarImagen(indiceActual);
+let slideIndex = 1;
 
-function mostrarImagen(indice) {
-    for (let i = 0; i < imagenes.length; i++) {
-        imagenes[i].style.display = "none";
-    }
-    imagenes[indice].style.display = "block";
+function plusSlides(n) {
+    carrusel(slideIndex += n);
 }
 
-function derecha() {
-    indiceActual++;
-    if (indiceActual >= imagenes.length) {
-        indiceActual = 0;
-    }
-    mostrarImagen(indiceActual);
+function carrusel(n) {
+    const numSlides = carouselData.length;
+
+    if (n > numSlides) slideIndex = 1;
+    if (n < 1) slideIndex = numSlides;
+
+    const currentData = carouselData[slideIndex - 1];
+
+    const slideImg = document.getElementById("slide-img");
+    const slideNumberText = document.getElementById("slide-number");
+
+    slideImg.src = currentData.src;
+    slideNumberText.textContent = `${slideIndex} / ${numSlides}`;
 }
 
-function izquierda() {
-    indiceActual--;
-    if (indiceActual < 0) {
-        indiceActual = imagenes.length - 1;
-    }
-    mostrarImagen(indiceActual);
-}
+document.addEventListener("DOMContentLoaded", () => {
+    carrusel(slideIndex);
+});

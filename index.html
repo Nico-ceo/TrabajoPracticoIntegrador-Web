@@ -46,16 +46,23 @@
     <div id="imagendequienessomos">
     </div><br>
 
-    <!-- lista ordenada carrusel  -->
-    <div class="carrusel">
-        <img src="./inconos/estilo formal sin fondo.png" alt="" class="imagen">
-        <img src="./inconos/Estilo informal sin fondo.png" alt="imagen 2" class="imagen">
-        <img src="./inconos/Estilo urbano sin fondo.png" alt="imagen 3" class="imagen">
+    <div class="carrusel-container">
 
-        <button class="boton-izquierda" onclick="izquierda()"><img
-                src="./inconos/arrow-left-circle-fill.svg"></a></button>
-        <button class="boton-derecho" onclick="derecha()"><img src="./inconos/arrow-right-circle-fill.svg"></button>
-    </div><br><br>
+        <button class="boton-izquierda" onclick="plusSlides(-1)">
+            <img src="./inconos/arrow-left-circle-fill.svg" alt="Anterior">
+        </button>
+
+        <div class="slides fade" id="current-slide">
+            <div class="numbertext" id="slide-number">1 / 3</div>
+            <img class="imgCar" id="slide-img" src="./imagenes/carrusel-1.jpeg" alt="Imagen del carrusel">
+        </div>
+
+        <button class="boton-derecha" onclick="plusSlides(1)">
+            <img src="./inconos/arrow-right-circle-fill.svg" alt="Siguiente">
+        </button>
+
+    </div>
+
     <!-- Informacion de la pagina -->
     <div id="trayectoria">
     </div><br><br>
