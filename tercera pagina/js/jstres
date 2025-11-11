@@ -148,6 +148,8 @@ function ValidarTodo() {
       Comentario: ${cuad.value}
     `;
     comentarios.appendChild(p);
+    p.style.color = "pink";
+    
   } else {
     comentarios.innerHTML = errores;
   }

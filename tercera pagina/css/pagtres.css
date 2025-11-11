@@ -80,9 +80,13 @@ label {
     background-color: #3359f2;
 }
 
-fieldset p {
-    color: #ffffff;
+#checkbox {
+    color: white;
 }
+ p {
+  color: rgb(255, 176, 176);
+}
+
 
 
 button {
