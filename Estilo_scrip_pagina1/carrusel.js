@@ -1,3 +1,4 @@
+// arreglo carrusel donde estan las imagenes que se van a mostrar
 const carouselData = [
     { src: "./inconos/estilo-formal-sin-fondo.png" },
     { src: "./inconos/estilo-informal-sin-fondo.png" },
@@ -5,11 +6,11 @@ const carouselData = [
 ];
 
 let slideIndex = 1;
-
+// funcion del slider
 function plusSlides(n) {
     carrusel(slideIndex += n);
 }
-
+// funcion del carrusel
 function carrusel(n) {
     const numSlides = carouselData.length;
 
