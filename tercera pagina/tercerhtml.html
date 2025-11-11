@@ -36,7 +36,7 @@
     <br><br>
 
 
-    <form id="form" novalidate>
+    <form id="form" novalidate onsubmit="ValidarForm(event)">
         <fieldset>
             <label for="name">Nombre y apellido:</label><br>
             <input type="text" required minlength="8" id="name" name="name"><br>
@@ -63,7 +63,7 @@
     </form><br><br>
 
 
-    <script src="./js/jstres" defer></script>
+    
     <div>
         <h1 id="animacion"></h1>
     </div>
@@ -84,6 +84,7 @@
 
     </footer>
 
+<script src="./js/jstres" defer></script>
 
 </body>
 

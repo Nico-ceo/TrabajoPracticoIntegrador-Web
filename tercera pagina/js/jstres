@@ -1,3 +1,5 @@
+
+//variables Doom
 const form = document.getElementById("form");
 const email = document.getElementById("email");
 const nameInput = document.getElementById("name");
@@ -6,58 +8,149 @@ const cuad = document.getElementById("cuadrotexto");
 const submit = document.getElementById("submit");
 const comentarios = document.getElementById("comentarios");
 
-  submit.addEventListener('click', function (event) {
-    event.preventDefault(); // evita que se recargue la página
+//expresiones regulares
+  const expresionRegGm = /^\w+@\w+\.com(\.ar)?$/;
+  const expresionRegTel = /^[+\d][\d\s-]{7,15}$/;
+  const expresionRegNm = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
 
-    const expresionRegGm = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const expresionRegTel = /^[+\d][\d\s-]{7,15}$/;
-    const expresionRegNm = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
+//banderas
+  let errores = "";
+  let num = false;
+  let nombre = false;
+  let correo = false;
+  let cuadrado = false;
 
+ // funciones
+function ValidarForm(event) {
+  event.preventDefault();
 
-    let errores = "";
-    let num = false;
-    let nombre = false;
-    let correo = false;
-    let cuadrado = false;
-
-if (nameInput.value.length >= 8 && expresionRegNm.test(nameInput.value)) {
-    nombre = true;
-    nameInput.style.borderColor = "green";
-} else {
-    nameInput.style.borderColor = "red";
-    errores += "Nombre no válido<br>";
+  errores = "";
+  // llamar funciones
+  ValidarNombre();
+  ValidarEmail();
+  ValidarTelefono();
+  ValidarComentario();
+  ValidarTodo();
 }
+ 
+  function ValidarNombre() {
 
-if (email.value.length >= 10 && expresionRegGm.test(email.value)) {
-    correo = true;
-    email.style.borderColor = "green";
-} else {
-    email.style.borderColor = "red";
-    errores += "Email no válido<br>";
-}
+    if (nameInput.value.length < 8) {
+      nombre = false;
+      errores += " Nombre demasiado corto (mínimo 8 caracteres)<br>";
+      nameInput.style.borderColor = "red";
 
-if (expresionRegTel.test(tel.value)) {
-    num = true;
-    tel.style.borderColor = "green";
-} else {
-    tel.style.borderColor = "red";
-    errores += "Teléfono no válido<br>";
-}
+    } else if (nameInput.value.length > 20) {
 
-if (cuad.value.length >= 10) {
-    cuadrado = true;
-    cuad.style.borderColor = "green";
-} else {
-    cuad.style.borderColor = "red";
-    errores += "Comentario demasiado corto<br>";
-}
+      nombre = false;
+      errores += " Nombre demasiado largo (máximo 20 caracteres)<br>";
+      nameInput.style.borderColor = "red";
 
-if (num && nombre && correo && cuadrado) {
-    comentarios.innerHTML = "Formulario enviado correctamente ✅";
-} else {
+    } else if (!expresionRegNm.test(nameInput.value)) {
+      nombre = false;
+      errores += " Nombre no válido: solo letras y espacios permitidos<br>";
+      nameInput.style.borderColor = "red";
+    
+    } else {
+      nombre = true;
+      nameInput.style.borderColor = "green";
+      console.log("Nombre Correcto");
+    }
+  }
+
+  function ValidarEmail() {
+    if (email.value.length < 10) {
+      correo = false;
+      email.style.borderColor = "red";
+      errores += " Email demasiado corto<br>";
+
+
+    } else if (email.value.length > 25) {
+      correo = false;
+      email.style.borderColor = "red";
+      errores += " Email demasiado largo<br>";
+
+    } else if (expresionRegGm.test(email.value)) {
+      correo = true;
+      email.style.borderColor = "green";
+      console.log("Email Correcto");
+
+
+    } else {
+      correo = false;
+      email.style.borderColor = "red";
+      errores += " Email no válido (ejemplo@dominio.com)<br>";
+    }
+  }
+
+  function ValidarTelefono() {
+
+    if (/[A-Za-z@.,#]/.test(tel.value)) {
+
+      num = false;
+      errores += " Teléfono inválido: solo se permiten números<br>";
+      tel.style.borderColor = "red";
+
+    }else if (tel.value.length < 10) {
+      num = false;
+      errores += " Teléfono inválido: demasiado corto, minimo 10 numeros <br>";
+      tel.style.borderColor = "red";
+
+    }else if (tel.value.length > 10) {
+
+      num = false;
+      tel.style.borderColor = "red";
+      errores += " Teléfono inválido: demasiado Largo , maximo 10 numeros<br>";
+
+    } else if (expresionRegTel.test(tel.value)) {
+
+      num = true;
+      tel.style.borderColor = "green";
+      console.log("Teléfono Correcto");
+
+    } else {
+      num = false;
+      tel.style.borderColor = "red";
+      errores += " Teléfono no válido<br>";
+    }
+  }
+
+  function ValidarComentario() {
+
+    if (cuad.value.length < 10) {
+      cuadrado = false;
+      cuad.style.borderColor = "red";
+      errores += " Comentario demasiado corto (mínimo 10 caracteres)<br>";
+
+    } else if (cuad.value.length > 100) {
+      cuadrado = false;
+      cuad.style.borderColor = "red";
+      errores += " Comentario demasiado largo (máximo 100 caracteres)<br>";
+
+    } else {
+      cuadrado = true;
+      cuad.style.borderColor = "green";
+      console.log("Comentario Correcto");
+    }
+  }
+
+function ValidarTodo() {
+  comentarios.innerHTML = "";
+
+  if (num && nombre && correo && cuadrado) {
+    const p = document.createElement("p");
+    p.innerHTML = `
+      ✅ Formulario enviado correctamente<br>
+      <strong>Datos ingresados:</strong><br>
+      Nombre: ${nameInput.value}<br>
+      Email: ${email.value}<br>
+      Teléfono: ${tel.value}<br>
+      Comentario: ${cuad.value}
+    `;
+    comentarios.appendChild(p);
+  } else {
     comentarios.innerHTML = errores;
+  }
 }
-
-});  
 
 
